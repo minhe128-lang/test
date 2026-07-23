@@ -4,29 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#05070d" />
-  <title>OVERKILL UTILITIES</title>
+  <title>쓸데없이 거대한 도구함</title>
   <link rel="stylesheet" href="assets/app.css" />
+  <link rel="stylesheet" href="assets/fun-overhaul.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 </head>
 <body>
   <main class="home-shell">
     <section class="hero-panel">
-      <div class="hero-kicker">OVERKILL UTILITIES // 20 DISTINCT SYSTEMS</div>
-      <h1>쓸데없이 진지한 <span>20개 독립 도구실</span></h1>
-      <p>이제 같은 틀에 배경만 갈아끼운 도구 모음이 아니다. 각 버튼은 각자 다른 세계관, 다른 UI, 다른 작동 방식을 가진 독립 사이트처럼 열리도록 구성했다.</p>
+      <div class="hero-kicker">사소한 일을 국가 행사처럼 처리하는 곳</div>
+      <h1>쓸데없이 거대한<br><span>도구함 20선</span></h1>
+      <p>글자 수 하나 세고, 주사위 하나 굴리고, 파일 하나 내려받는 데 왜 이렇게까지 해야 하는지는 아무도 모릅니다. 다만 누르는 맛은 있어야 합니다.</p>
       <div class="hero-chips">
-        <span>20 unique screens</span>
-        <span>image-backed layouts</span>
-        <span>dramatic interaction</span>
+        <span>전부 실제 작동</span>
+        <span>도구마다 전용 연출</span>
+        <span>한국어 중심</span>
       </div>
+      <div class="hero-meter"><span>현재 과잉 연출 수치</span><b>999%</b><i></i></div>
     </section>
 
+    <section class="home-guide">
+      <strong>도구 하나를 고르십시오</strong>
+      <span>평범하게 처리할 수 있는 일도 굳이 거창하게 처리합니다.</span>
+    </section>
     <section class="card-grid" id="toolGrid"></section>
   </main>
 
   <div id="appMount"></div>
   <div id="fxLayer"></div>
+  <button id="soundToggle" class="sound-toggle" aria-label="효과음 켜기/끄기">🔊</button>
 
   <script src="assets/app.js"></script>
+  <script src="assets/fun-overhaul.js"></script>
 </body>
 </html>

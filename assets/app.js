@@ -1,24 +1,24 @@
 const APPS = [
-  {id:'weather', title:'천지개벽 날씨국', icon:'🌦️', color:'#4dceff', scene:'assets/scenes/weather.webp', thumb:'assets/mockups/weather.webp', cls:'theme-blue', dock:'right'},
-  {id:'button', title:'궁극의 확인 버튼', icon:'🔘', color:'#ff5c5c', scene:'assets/scenes/button.webp', thumb:'assets/mockups/button.webp', cls:'theme-red', dock:'bottom'},
-  {id:'todo', title:'마왕 토벌 투두', icon:'⚔️', color:'#d9a74a', scene:'assets/scenes/todo.webp', thumb:'assets/mockups/todo.webp', cls:'theme-gold', dock:'left'},
-  {id:'timer', title:'종말 집중 타이머', icon:'☢️', color:'#d7ff4d', scene:'assets/scenes/timer.webp', thumb:'assets/mockups/timer.webp', cls:'theme-gold', dock:'right'},
-  {id:'password', title:'해킹식 비밀번호 생성', icon:'💻', color:'#59ff83', scene:'assets/scenes/password.webp', thumb:'assets/mockups/password.webp', cls:'theme-green', dock:'left'},
-  {id:'dice', title:'우주 창조 주사위', icon:'🎲', color:'#d48aff', scene:'assets/scenes/dice.webp', thumb:'assets/mockups/dice.webp', cls:'theme-purple', dock:'right'},
-  {id:'rps', title:'세계대전 가위바위보', icon:'✊', color:'#ff704d', scene:'assets/scenes/rps.webp', thumb:'assets/mockups/rps.webp', cls:'theme-red', dock:'left'},
-  {id:'currency', title:'금융위기 환율 계산', icon:'📉', color:'#ff6c57', scene:'assets/scenes/currency.webp', thumb:'assets/mockups/currency.webp', cls:'theme-red', dock:'right'},
-  {id:'counter', title:'문서 심문실', icon:'🔎', color:'#69b6ff', scene:'assets/scenes/counter.webp', thumb:'assets/mockups/counter.webp', cls:'theme-blue', dock:'bottom'},
-  {id:'lunch', title:'점심 신탁소', icon:'🍲', color:'#ffb14d', scene:'assets/scenes/lunch.webp', thumb:'assets/mockups/lunch.webp', cls:'theme-gold', dock:'right'},
-  {id:'qr', title:'레이저 QR 제조소', icon:'▦', color:'#55e8ff', scene:'assets/scenes/qr.webp', thumb:'assets/mockups/qr.webp', cls:'theme-blue', dock:'left'},
-  {id:'nickname', title:'닉네임 각성 연구소', icon:'🧬', color:'#c76dff', scene:'assets/scenes/nickname.webp', thumb:'assets/mockups/nickname.webp', cls:'theme-purple', dock:'right'},
-  {id:'spell', title:'맞춤법 대법원', icon:'⚖️', color:'#f0c06c', scene:'assets/scenes/spell.webp', thumb:'assets/mockups/spell.webp', cls:'theme-gold', dock:'left'},
-  {id:'download', title:'파일 발사 통제소', icon:'🚀', color:'#4aa6ff', scene:'assets/scenes/download.webp', thumb:'assets/mockups/download.webp', cls:'theme-blue', dock:'right'},
-  {id:'random', title:'극비 난수 작전실', icon:'🎰', color:'#ff5c6b', scene:'assets/scenes/random.webp', thumb:'assets/mockups/random.webp', cls:'theme-red', dock:'left'},
-  {id:'quiz', title:'산수 던전', icon:'🐉', color:'#91d45d', scene:'assets/scenes/quiz.webp', thumb:'assets/mockups/quiz.webp', cls:'theme-gold', dock:'right'},
-  {id:'compress', title:'이미지 압축 프레스', icon:'🗜️', color:'#ff9d4c', scene:'assets/scenes/compress.webp', thumb:'assets/mockups/compress.webp', cls:'theme-gold', dock:'left'},
-  {id:'compat', title:'우주 궁합 판독기', icon:'🔮', color:'#ff7acc', scene:'assets/scenes/compat.webp', thumb:'assets/mockups/compat.webp', cls:'theme-purple', dock:'right'},
-  {id:'volume', title:'스타디움 볼륨 콘솔', icon:'🔊', color:'#4fe0c3', scene:'assets/scenes/volume.webp', thumb:'assets/mockups/volume.webp', cls:'theme-blue', dock:'bottom'},
-  {id:'refresh', title:'시간여행 새로고침', icon:'🌀', color:'#8f7cff', scene:'assets/scenes/refresh.webp', thumb:'assets/mockups/refresh.webp', cls:'theme-purple', dock:'bottom'},
+  {id:'weather', title:'천지개벽 날씨국', icon:'🌦️', color:'#4dceff', scene:'assets/scenes/weather.webp', cls:'theme-blue', dock:'right'},
+  {id:'button', title:'궁극의 확인 버튼', icon:'🔘', color:'#ff5c5c', scene:'assets/scenes/button.webp', cls:'theme-red', dock:'bottom'},
+  {id:'todo', title:'마왕 토벌 투두', icon:'⚔️', color:'#d9a74a', scene:'assets/scenes/todo.webp', cls:'theme-gold', dock:'left'},
+  {id:'timer', title:'종말 집중 타이머', icon:'☢️', color:'#d7ff4d', scene:'assets/scenes/timer.webp', cls:'theme-gold', dock:'right'},
+  {id:'password', title:'해킹식 비밀번호 생성', icon:'💻', color:'#59ff83', scene:'assets/scenes/password.webp', cls:'theme-green', dock:'left'},
+  {id:'dice', title:'우주 창조 주사위', icon:'🎲', color:'#d48aff', scene:'assets/scenes/dice.webp', cls:'theme-purple', dock:'right'},
+  {id:'rps', title:'세계대전 가위바위보', icon:'✊', color:'#ff704d', scene:'assets/scenes/rps.webp', cls:'theme-red', dock:'left'},
+  {id:'currency', title:'금융위기 환율 계산', icon:'📉', color:'#ff6c57', scene:'assets/scenes/currency.webp', cls:'theme-red', dock:'right'},
+  {id:'counter', title:'문서 심문실', icon:'🔎', color:'#69b6ff', scene:'assets/scenes/counter.webp', cls:'theme-blue', dock:'bottom'},
+  {id:'lunch', title:'점심 신탁소', icon:'🍲', color:'#ffb14d', scene:'assets/scenes/lunch.webp', cls:'theme-gold', dock:'right'},
+  {id:'qr', title:'레이저 QR 제조소', icon:'▦', color:'#55e8ff', scene:'assets/scenes/qr.webp', cls:'theme-blue', dock:'left'},
+  {id:'nickname', title:'닉네임 각성 연구소', icon:'🧬', color:'#c76dff', scene:'assets/scenes/nickname.webp', cls:'theme-purple', dock:'right'},
+  {id:'spell', title:'맞춤법 대법원', icon:'⚖️', color:'#f0c06c', scene:'assets/scenes/spell.webp', cls:'theme-gold', dock:'left'},
+  {id:'download', title:'파일 발사 통제소', icon:'🚀', color:'#4aa6ff', scene:'assets/scenes/download.webp', cls:'theme-blue', dock:'right'},
+  {id:'random', title:'극비 난수 작전실', icon:'🎰', color:'#ff5c6b', scene:'assets/scenes/random.webp', cls:'theme-red', dock:'left'},
+  {id:'quiz', title:'산수 던전', icon:'🐉', color:'#91d45d', scene:'assets/scenes/quiz.webp', cls:'theme-gold', dock:'right'},
+  {id:'compress', title:'이미지 압축 프레스', icon:'🗜️', color:'#ff9d4c', scene:'assets/scenes/compress.webp', cls:'theme-gold', dock:'left'},
+  {id:'compat', title:'우주 궁합 판독기', icon:'🔮', color:'#ff7acc', scene:'assets/scenes/compat.webp', cls:'theme-purple', dock:'right'},
+  {id:'volume', title:'스타디움 볼륨 콘솔', icon:'🔊', color:'#4fe0c3', scene:'assets/scenes/volume.webp', cls:'theme-blue', dock:'bottom'},
+  {id:'refresh', title:'시간여행 새로고침', icon:'🌀', color:'#8f7cff', scene:'assets/scenes/refresh.webp', cls:'theme-purple', dock:'bottom'},
 ];
 
 const byId = (id) => document.getElementById(id);
@@ -31,7 +31,7 @@ const cardGrid = byId('toolGrid');
 cardGrid.innerHTML = APPS.map((app, i) => `
 <button class="launch-card" style="--scene:url('${app.thumb || app.scene}');--accent:${app.color}" data-app="${app.id}">
   <span class="enter">↗</span>
-  <div class="sys">System ${String(i+1).padStart(2,'0')}</div>
+  <div class="sys">도구 ${String(i+1).padStart(2,'0')}</div>
   <span class="card-icon">${app.icon}</span>
   <h3>${app.title}</h3>
   <p>${tagline(app.id)}</p>
@@ -44,26 +44,26 @@ cardGrid.addEventListener('click', e => {
 
 function tagline(id){
   return {
-    weather:'기상국 관제실 UI에서 실제 날씨를 상황실처럼 표시.',
-    button:'중앙 돔형 확인 코어를 누르면 세계가 끝난 척 연출.',
-    todo:'길드 게시판 구조로 할 일과 보스전 진행이 분리.',
-    timer:'벙커 제어판처럼 생긴 집중 타이머.',
-    password:'녹색 터미널과 로그창이 따로 있는 해킹식 생성기.',
-    dice:'우주 제단 중심의 운명 굴림실.',
-    rps:'전장 지도와 전략 브리핑이 있는 가위바위보 지휘실.',
-    currency:'시장 붕괴 대시보드 형식의 환율 변환기.',
-    counter:'취조 영상, 진술서, 분석 패널이 분리된 글자수 도구.',
-    lunch:'제단 중심의 메뉴 신탁 구조.',
-    qr:'레이저 각인 장비 구조의 QR 생성실.',
-    nickname:'DNA 챔버와 등급 판정이 있는 닉네임 연구소.',
-    spell:'법정 문서 검토 UI로 오타를 재판.',
-    download:'페이로드 설정과 발사 패널 분리.',
-    random:'작전 콘솔 기반 난수 생성.',
-    quiz:'드래곤 보스전형 산수 풀이.',
-    compress:'산업 프레스 장비형 압축기.',
-    compat:'별자리 관측소형 궁합 감정.',
-    volume:'실제 믹서 콘솔처럼 채널 슬라이더 구성.',
-    refresh:'시공간 포털 제어 화면.'
+    weather:'서울 날씨 하나 보려고 위성 관제망을 총동원합니다.',
+    button:'아무 일도 없지만 누르는 순간 세계가 끝난 척합니다.',
+    todo:'할 일 하나 끝내고 마왕 체력 1,250을 깎습니다.',
+    timer:'25분 집중을 위해 핵벙커 출입문을 봉쇄합니다.',
+    password:'문자열 하나 만들려고 국가 보안망을 해킹한 척합니다.',
+    dice:'주사위 하나에 은하와 운명을 갈아 넣습니다.',
+    rps:'가위바위보를 세계대전급 군사 작전으로 처리합니다.',
+    currency:'환전 한 번 할 때마다 시장이 붕괴하는 척합니다.',
+    counter:'문장을 취조실에 앉혀 글자 수를 자백시킵니다.',
+    lunch:'점심 메뉴를 고르려고 고대 신탁을 깨웁니다.',
+    qr:'검은 네모를 만들기 위해 산업용 레이저를 가동합니다.',
+    nickname:'닉네임 하나에 유전자 조작과 등급 판정을 실시합니다.',
+    spell:'오타를 피고석에 세우고 판결봉을 내려칩니다.',
+    download:'작은 문서 파일을 로켓에 실어 다운로드 궤도로 보냅니다.',
+    random:'숫자 하나를 위성 추적 끝에 국가기밀로 확정합니다.',
+    quiz:'산수 정답을 마법탄으로 바꿔 드래곤에게 발사합니다.',
+    compress:'이미지 용량을 산업용 프레스로 짓눌러 버립니다.',
+    compat:'이름 두 개로 우주적 운명을 자신 있게 날조합니다.',
+    volume:'볼륨 하나 올릴 때마다 공연장 관객이 폭주합니다.',
+    refresh:'새로고침 한 번을 위해 시간선을 통째로 갈아엎습니다.'
   }[id];
 }
 
@@ -72,7 +72,7 @@ function shell(app, layoutClass, inner){
   <section class="app-screen ${app.cls}" id="app-${app.id}" style="--accent:${app.color};--scene:url('${app.scene}')">
     <div class="app-frame">
       <div class="app-toolbar">
-        <div class="meta"><b>${app.title}</b><span>${app.id.toUpperCase()} SYSTEM</span></div>
+        <div class="meta"><b>${app.title}</b><span>전용 작동실</span></div>
         <button class="close-app" data-close="1">← 도구함으로</button>
       </div>
       <div class="app-content app-unique ${layoutClass}">${inner}</div>
@@ -270,7 +270,7 @@ const renderers = {
 
 function openApp(id){
   const app = APPS.find(a => a.id === id); if(!app) return;
-  if(location.hash !== '#'+id) history.replaceState(null,'','#'+id);
+  try{if(location.hash !== '#'+id) history.replaceState(null,'','#'+id);}catch{}
   mount.innerHTML = renderers[id](app);
   const screen = byId(`app-${id}`);
   screen.classList.add('open');
@@ -278,8 +278,9 @@ function openApp(id){
   document.body.classList.add('app-open');
   screen.addEventListener('click', e => { if (e.target.dataset.close) closeApp(); });
   initApp(id, screen);
+  setTimeout(()=>window.__enhanceOverkill?.(id),0);
 }
-function closeApp(){ mount.innerHTML=''; currentApp=null; document.body.classList.remove('app-open'); if(location.hash) history.replaceState(null,'',location.pathname+location.search); }
+function closeApp(){ mount.innerHTML=''; currentApp=null; document.body.classList.remove('app-open'); try{if(location.hash) history.replaceState(null,'',location.pathname+location.search);}catch{} }
 mount.addEventListener('click', e=>{ if(e.target.classList.contains('app-screen')) closeApp(); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape' && currentApp) closeApp(); });
 
@@ -311,7 +312,7 @@ function initApp(id, root){
 
 function initWeather(root){
   const log = $('#wLog', root);
-  $('#wSimulate', root).onclick = ()=>{ $('#wAlert', root).textContent='SEVERE WEATHER ALERT // CATEGORY 5 VISUALIZATION'; spawnParticles(['⚡','☁','🌧'], '#79d8ff', 24); };
+  $('#wSimulate', root).onclick = ()=>{ $('#wAlert', root).textContent='최고 단계 기상 경보 연출 가동'; spawnParticles(['⚡','☁','🌧'], '#79d8ff', 24); };
   fetch('https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,relative_humidity_2m,apparent_temperature,pressure_msl,wind_speed_10m,weather_code,cloud_cover,precipitation&hourly=visibility&timezone=Asia%2FSeoul')
     .then(r=>r.json()).then(data=>{
       const c=data.current; if(!c) throw new Error('no data');
@@ -320,28 +321,31 @@ function initWeather(root){
       $('#wCloud', root).textContent=`${c.cloud_cover ?? '--'}%`; $('#wPrecip', root).textContent=`${c.precipitation ?? 0}%`;
       $('#wPress', root).textContent=`${c.pressure_msl} hPa`; const vis=data.hourly?.visibility?.[0]; $('#wVis', root).textContent = vis ? `${Math.round(vis/1000)} km` : '-- km';
       $('#wAlert', root).textContent = `서울 현재 상태 // ${weatherText(c.weather_code)} // 풍속 ${c.wind_speed_10m}km/h`;
-      log.textContent = `CONNECTED TO OPEN-METEO\nTEMP ${c.temperature_2m}°C\nHUMIDITY ${c.relative_humidity_2m}%\nPRESSURE ${c.pressure_msl} hPa\nWEATHER CODE ${c.weather_code}`;
-    }).catch(()=>{ $('#wAlert', root).textContent='실시간 연결 실패 // 시뮬레이션 모드'; log.textContent+='\nconnection failed. fallback mode enabled.';});
+      log.textContent = `기상 자료 연결 완료\n기온 ${c.temperature_2m}°C\n습도 ${c.relative_humidity_2m}%\n기압 ${c.pressure_msl} hPa\n기상 코드 ${c.weather_code}`;
+    }).catch(()=>{ $('#wAlert', root).textContent='실시간 연결 실패 // 시뮬레이션 모드'; log.textContent+='\n연결 실패. 모의 관측 모드로 전환.';});
 }
-function weatherText(code){ const map={0:'CLEAR',1:'MAINLY CLEAR',2:'PARTLY CLOUDY',3:'OVERCAST',45:'FOG',48:'RIME FOG',51:'LIGHT DRIZZLE',53:'DRIZZLE',55:'DENSE DRIZZLE',61:'RAIN',63:'HEAVY RAIN',65:'EXTREME RAIN',71:'SNOW',80:'RAIN SHOWERS',95:'THUNDERSTORM'}; return map[code]||`CODE ${code}`; }
+function weatherText(code){ const map={0:'맑음',1:'대체로 맑음',2:'구름 조금',3:'흐림',45:'안개',48:'서리 안개',51:'약한 이슬비',53:'이슬비',55:'강한 이슬비',61:'비',63:'강한 비',65:'폭우',71:'눈',80:'소나기',95:'뇌우'}; return map[code]||`기상 코드 ${code}`; }
+
 
 function initButton(root){
-  $('#confirmCore', root).onclick = ()=>{
-    doFlash(); spawnParticles(['⚠','✦','☢'], '#ff6a6a', 34);
-    $('#confirmStatus', root).textContent='CONFIRMATION ACCEPTED. ABSOLUTE CONSEQUENCES DEPLOYED.';
-    $('#confirmStability', root).textContent = `${Math.max(0,Math.floor(Math.random()*9))}%`;
-    $('#confirmLog', root).textContent = 'final confirmation received...\nopening consequence gates...\nreality rollback unavailable.';
+  const status=$('#confirmStatus', root), stability=$('#confirmStability', root), log=$('#confirmLog', root);
+  $('#confirmCore', root).onclick=()=>{
+    doFlash(); spawnParticles(['⚠','✦','☢'],'#ff6a6a',34);
+    const stable=Math.max(0,Math.floor(Math.random()*9));
+    status.textContent='최종 확인 완료. 과도한 결과가 배치되었습니다.';
+    stability.textContent=`${stable}%`;
+    log.textContent='최종 확인 신호 수신\n결과 장치 개방\n되돌리기 기능: 애초에 없음';
   };
 }
 
 function initTodo(root){
   let hp=10000, done=0; const list=$('#todoList', root);
-  let tasks=['Defeat the procrastination dragon','Cleanse the cursed desktop','Rescue the deadline','Gather 10 useful notes'];
+  let tasks=['미루기 드래곤 토벌','저주받은 바탕화면 정리','마감 기한 구출','쓸모 있는 메모 10개 수집'];
   function render(){ list.innerHTML=tasks.map((t,i)=>`<div class="choice-item between"><span>${t}</span><button class="btn-ghost" data-done="${i}">완료</button></div>`).join(''); $('#todoHp', root).textContent=`${hp} / 10000`; $('#todoBar', root).style.width=`${hp/100}%`; $('#todoDone', root).textContent=done; }
   render();
   list.onclick=(e)=>{ const idx=e.target.dataset.done; if(idx==null) return; tasks.splice(idx,1); hp=Math.max(0,hp-1250); done++; spawnParticles(['⚔','🔥','✦'],'#ffbd67',18); render(); };
   $('#todoAddBtn', root).onclick=()=>{ const v=$('#todoInput', root).value.trim(); if(v){ tasks.push(v); $('#todoInput', root).value=''; render(); } };
-  $('#todoQuick', root).onclick=()=>{ tasks.push('Train at the arena'); render(); };
+  $('#todoQuick', root).onclick=()=>{ tasks.push('훈련장에서 집중력 단련'); render(); };
 }
 
 function initTimer(root){
@@ -349,34 +353,36 @@ function initTimer(root){
   const display=$('#timerDisplay', root), log=$('#timerLog', root), state=$('#timerState', root);
   function paint(){ const m=String(Math.floor(remain/60)).padStart(2,'0'), s=String(remain%60).padStart(2,'0'); display.textContent=`${m}:${s}`; }
   paint();
-  root.querySelectorAll('[data-mins]').forEach(b=>b.onclick=()=>{ total=+b.dataset.mins*60; remain=total; paint(); state.textContent=`MODE SET // ${b.dataset.mins} MIN`; });
-  $('#timerStart', root).onclick=()=>{ if(timer) return; state.textContent='FOCUS MODE: ACTIVATED'; log.textContent='bunker sealed. focus session running...'; timer=setInterval(()=>{ remain--; paint(); if(remain<=0){ clearInterval(timer); timer=null; state.textContent='DOOMSDAY ALERT // SESSION COMPLETE'; doFlash(); spawnParticles(['☢','⚠','✦'],'#f8ff67',28);} },1000); };
-  $('#timerPause', root).onclick=()=>{ clearInterval(timer); timer=null; state.textContent='PAUSED'; };
-  $('#timerReset', root).onclick=()=>{ clearInterval(timer); timer=null; remain=total; paint(); state.textContent='RESET COMPLETE'; };
+  root.querySelectorAll('[data-mins]').forEach(b=>b.onclick=()=>{ total=+b.dataset.mins*60; remain=total; paint(); state.textContent=`집중 시간 ${b.dataset.mins}분 설정`; });
+  $('#timerStart', root).onclick=()=>{ if(timer) return; state.textContent='집중 모드 가동'; log.textContent='벙커 봉쇄 완료. 집중 시간 진행 중...'; timer=setInterval(()=>{ remain--; paint(); if(remain<=0){ clearInterval(timer); timer=null; state.textContent='집중 완료. 종말은 잠시 연기되었습니다.'; doFlash(); spawnParticles(['☢','⚠','✦'],'#f8ff67',28);} },1000); };
+  $('#timerPause', root).onclick=()=>{ clearInterval(timer); timer=null; state.textContent='일시정지'; };
+  $('#timerReset', root).onclick=()=>{ clearInterval(timer); timer=null; remain=total; paint(); state.textContent='초기화 완료'; };
 }
 
 function generatePassword(opts){
   let chars=''; if(opts.upper) chars+='ABCDEFGHIJKLMNOPQRSTUVWXYZ'; if(opts.lower) chars+='abcdefghijklmnopqrstuvwxyz'; if(opts.num) chars+='0123456789'; if(opts.sym) chars+='!@#$%^&*()_+-=[]{}|;:,.<>?';
-  if(!chars) chars='abcdefghijklmnopqrstuvwxyz'; let out=''; for(let i=0;i<opts.len;i++) out += chars[Math.floor(Math.random()*chars.length)]; return out;
+  if(!chars) chars='abcdefghijklmnopqrstuvwxyz';
+  const bytes=new Uint32Array(opts.len); if(globalThis.crypto?.getRandomValues) crypto.getRandomValues(bytes); else for(let i=0;i<bytes.length;i++) bytes[i]=Math.floor(Math.random()*2**32);
+  let out=''; for(let i=0;i<opts.len;i++) out += chars[bytes[i]%chars.length]; return out;
 }
 function initPassword(root){
   const out=$('#pwOutput', root), log=$('#pwLog', root), bar=$('#pwStrength', root);
-  function run(){ const pw=generatePassword({len:+$('#pwLen', root).value, upper:$('#pwUpper', root).checked, lower:$('#pwLower', root).checked, num:$('#pwNum', root).checked, sym:$('#pwSym', root).checked}); out.textContent=pw; log.textContent=`secure session established\nseeded entropy pool\npassword generated successfully\nest. time to crack: ${10 ** Math.min(9, Math.floor(pw.length/2))} years`; bar.style.width='100%'; }
+  function run(){ const pw=generatePassword({len:+$('#pwLen', root).value, upper:$('#pwUpper', root).checked, lower:$('#pwLower', root).checked, num:$('#pwNum', root).checked, sym:$('#pwSym', root).checked}); out.textContent=pw; log.textContent=`보안 연결 수립 완료\n난수 재료 충전 완료\n비밀번호 생성 완료\n예상 해독 시간: ${10 ** Math.min(9, Math.floor(pw.length/2))}년`; bar.style.width='100%'; }
   $('#pwGen', root).onclick=run; $('#pwCopy', root).onclick=()=>copyText(out.textContent); run();
 }
 
 function initDice(root){
   let sides=20; const val=$('#diceValue', root), hist=$('#diceHistory', root), type=$('#diceType', root); let rows=[];
-  root.querySelectorAll('.die-select').forEach(b=>b.onclick=()=>{ sides=+b.dataset.sides; $('#diceMin', root).textContent='1'; $('#diceMax', root).textContent=String(sides); type.textContent=`D${sides} SELECTED`; });
-  $('#diceRoll', root).onclick=()=>{ const n=Math.ceil(Math.random()*sides); val.textContent=n; rows.unshift(`D${sides} → ${n}`); rows=rows.slice(0,8); hist.textContent=rows.join('\n'); spawnParticles(['✦','🜂','◈'],'#d48aff',20); };
+  root.querySelectorAll('.die-select').forEach(b=>b.onclick=()=>{ sides=+b.dataset.sides; $('#diceMin', root).textContent='1'; $('#diceMax', root).textContent=String(sides); type.textContent=`${sides}면체 선택`; });
+  $('#diceRoll', root).onclick=()=>{ const n=Math.ceil(Math.random()*sides); val.textContent=n; rows.unshift(`${sides}면체 → ${n}`); rows=rows.slice(0,8); hist.textContent=rows.join('\n'); spawnParticles(['✦','🜂','◈'],'#d48aff',20); };
 }
 
 function initRps(root){
   const names={rock:'✊',paper:'✋',scissors:'✌️'}; let w=0,l=0,d=0;
   root.querySelectorAll('[data-rps]').forEach(btn=>btn.onclick=()=>{
     const you=btn.dataset.rps, arr=['rock','paper','scissors'], enemy=arr[Math.floor(Math.random()*3)];
-    let result='DRAW'; if((you==='rock'&&enemy==='scissors')||(you==='paper'&&enemy==='rock')||(you==='scissors'&&enemy==='paper')){result='WIN';w++;} else if(you!==enemy){result='LOSE';l++;} else d++;
-    $('#rpsYou', root).textContent=names[you]; $('#rpsEnemy', root).textContent=names[enemy]; $('#rpsResult', root).textContent=result; $('#rpsScore', root).textContent=`Wins ${w} / Losses ${l} / Draws ${d}`; $('#rpsLog', root).textContent=`deployed ${you}\nenemy deployed ${enemy}\nresult ${result}`;
+    let result='무승부'; if((you==='rock'&&enemy==='scissors')||(you==='paper'&&enemy==='rock')||(you==='scissors'&&enemy==='paper')){result='승리';w++;} else if(you!==enemy){result='패배';l++;} else d++;
+    $('#rpsYou', root).textContent=names[you]; $('#rpsEnemy', root).textContent=names[enemy]; $('#rpsResult', root).textContent=result; $('#rpsScore', root).textContent=`승리 ${w} / 패배 ${l} / 무승부 ${d}`; $('#rpsLog', root).textContent=`아군 선택: ${names[you]}\n적군 선택: ${names[enemy]}\n판정: ${result}`;
   });
 }
 
@@ -385,66 +391,89 @@ function initCurrency(root){
   $('#curSwap', root).onclick=()=>{ const a=$('#curFrom', root), b=$('#curTo', root); [a.value,b.value]=[b.value,a.value]; };
   $('#curConvert', root).onclick=async()=>{
     const from=$('#curFrom', root).value, to=$('#curTo', root).value, amount=+$('#curAmount', root).value||0;
-    try{ const r=await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${from}&to=${to}`); const j=await r.json(); const val=j.rates?.[to]; if(val==null) throw new Error(); $('#curOutput', root).textContent=`${val.toFixed(2)} ${to}`; $('#curRate', root).textContent=`${from} → ${to} live rate loaded`; log.textContent=`${amount} ${from} → ${val.toFixed(2)} ${to}`; }
-    catch{ $('#curOutput', root).textContent='FAIL'; $('#curRate', root).textContent='live feed unavailable'; }
+    try{ const r=await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${from}&to=${to}`); const j=await r.json(); const val=j.rates?.[to]; if(val==null) throw new Error(); $('#curOutput', root).textContent=`${val.toFixed(2)} ${to}`; $('#curRate', root).textContent=`${from} → ${to} 실시간 환율 적용`; log.textContent=`${amount} ${from} → ${val.toFixed(2)} ${to}`; }
+    catch{ $('#curOutput', root).textContent='연결 실패'; $('#curRate', root).textContent='실시간 시장 자료를 불러오지 못했습니다.'; }
   };
 }
 
 function initCounter(root){
   const ta=$('#countText', root), phraseWrap=$('#countPhrases', root);
-  function update(){ const t=ta.value; const chars=t.length, words=(t.trim().match(/\S+/g)||[]).length, sentences=(t.match(/[.!?]+/g)||[]).length||1, read=Math.max(1,Math.ceil(words/4)); $('#countChars', root).textContent=chars; $('#countWords', root).textContent=words; $('#countSentences', root).textContent=sentences; $('#countRead', root).textContent=`${read}s`; const phrases=['honestly','actually','i swear','you know','maybe']; phraseWrap.innerHTML=phrases.map(p=>`<div class="choice-item between"><span>${p}</span><span class="badge">${t.toLowerCase().includes(p)?'detected':'0%'}</span></div>`).join(''); const trust=Math.max(20,Math.min(96, 80 - ((t.toLowerCase().match(/honestly|actually|i swear/g)||[]).length*12) + Math.floor(words/20))); $('#countTrust', root).textContent=`${trust}%`; $('#countVerdict', root).textContent=trust>70?'HIGH CONFIDENCE':trust>45?'MIXED SIGNAL':'LOW CONFIDENCE'; }
+  const phrases=['솔직히','사실은','정말이에요','알잖아요','아마도'];
+  function update(){
+    const t=ta.value; const chars=t.length, words=(t.trim().match(/\S+/g)||[]).length, sentences=(t.match(/[.!?。！？]+/g)||[]).length||1, read=Math.max(1,Math.ceil(words/4));
+    $('#countChars', root).textContent=chars; $('#countWords', root).textContent=words; $('#countSentences', root).textContent=sentences; $('#countRead', root).textContent=`${read}초`;
+    phraseWrap.innerHTML=phrases.map(p=>{const n=(t.match(new RegExp(p,'g'))||[]).length;return `<div class="choice-item between"><span>${p}</span><span class="badge">${n?`${n}회 발견`:'없음'}</span></div>`}).join('');
+    const evasive=(t.match(/솔직히|사실은|정말|아마|기억이 안|모르겠/g)||[]).length;
+    const trust=Math.max(18,Math.min(97,82-(evasive*8)+Math.floor(words/18)));
+    $('#countTrust', root).textContent=`${trust}%`; $('#countVerdict', root).textContent=trust>70?'신뢰 높음':trust>45?'진술 혼재':'신뢰 낮음';
+  }
   ta.oninput=update; update();
 }
 
 function initLunch(root){
-  const result=$('#lunchResult', root), prophecy=$('#lunchProphecy', root); let picked='TACOS AL PASTOR';
-  root.querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{ picked=b.dataset.food; });
-  $('#lunchOracle', root).onclick=()=>{ const foods=['김치찌개','라멘','버거','피자','타코','만두','초밥']; const final=picked || foods[Math.floor(Math.random()*foods.length)]; result.textContent=String(final).toUpperCase(); prophecy.textContent=`The stars demand ${final}. Feast well.`; spawnParticles(['🍜','🍔','🍕','🌮'],'#ffbd59',16); };
+  const result=$('#lunchResult', root), prophecy=$('#lunchProphecy', root); let picked=null;
+  root.querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{ picked=b.dataset.food; root.querySelectorAll('[data-food]').forEach(x=>x.classList.toggle('chosen',x===b)); });
+  $('#lunchOracle', root).onclick=()=>{ const foods=['김치찌개','라멘','버거','피자','타코','만두','초밥','제육볶음','돈가스','마라탕']; const final=picked || foods[Math.floor(Math.random()*foods.length)]; result.textContent=final; prophecy.textContent=`별들의 판정: ${final}. 오늘 점심은 이것으로 강제 확정합니다.`; spawnParticles(['🍜','🍔','🍕','🌮'],'#ffbd59',16); picked=null; };
 }
 
 function initQr(root){
   const out=$('#qrOutput', root), res=$('#qrResult', root);
-  function run(){ out.innerHTML=''; new QRCode(out,{text:$('#qrInput', root).value,width:+$('#qrSize', root).value,height:+$('#qrSize', root).value,correctLevel:QRCode.CorrectLevel[$('#qrLevel', root).value]}); res.textContent=`DECODED DATA\n${$('#qrInput', root).value}\nSTATUS VALID QR CODE`; }
+  function run(){ out.innerHTML=''; new QRCode(out,{text:$('#qrInput', root).value,width:+$('#qrSize', root).value,height:+$('#qrSize', root).value,correctLevel:QRCode.CorrectLevel[$('#qrLevel', root).value]}); res.textContent=`인식 내용\n${$('#qrInput', root).value}\n상태: 정상 QR 코드`; }
   $('#qrGenerate', root).onclick=run; run();
 }
 
 function initNickname(root){
   const ja=['影','月','炎','蒼','雷','夜','刃','星','王','零'];
-  const romanA=['KAGE','NOVA','SEI','RAVEN','LUNA','VEX','AERO','RYU'];
-  const romanB=['JIN','FANG','BLADE','ARC','STRIKE','VOID','HEART','WAVE'];
-  $('#nickAwaken', root).onclick=()=>{ const seed=$('#nickSeed', root).value; const h=pseudoHash(seed); const jp=ja[h%ja.length]+ja[(h>>3)%ja.length]; const rn=romanA[(h>>5)%romanA.length]+romanB[(h>>7)%romanB.length]; const score=80 + (h%20); $('#nickOut', root).textContent=jp; $('#nickRoman', root).textContent=rn; $('#nickTier', root).textContent=score>95?'S+':score>90?'S':'A+'; $('#nickCandidates', root).textContent=`${rn}\n${romanA[(h>>2)%romanA.length]+romanB[(h>>4)%romanB.length]}\n${romanA[(h>>1)%romanA.length]+romanB[(h>>6)%romanB.length]}`; };
+  const first=['그림자','별빛','검은','새벽','달빛','폭풍','푸른','용의','잿빛','심연'];
+  const second=['칼날','송곳니','파동','사냥꾼','공허','심장','울림','왕관','유령','궤적'];
+  $('#nickAwaken', root).onclick=()=>{ const seed=$('#nickSeed', root).value; const h=pseudoHash(seed); const jp=ja[h%ja.length]+ja[(h>>3)%ja.length]; const rn=first[(h>>5)%first.length]+second[(h>>7)%second.length]; const score=80+(h%20); $('#nickOut', root).textContent=jp; $('#nickRoman', root).textContent=rn; $('#nickTier', root).textContent=score>95?'특급':score>90?'상급':'고급'; $('#nickCandidates', root).textContent=`${rn}\n${first[(h>>2)%first.length]+second[(h>>4)%second.length]}\n${first[(h>>1)%first.length]+second[(h>>6)%second.length]}`; };
 }
 
 function initSpell(root){
-  const map=['severall','mispelled','gramar','obvous','showen','english','there'];
-  $('#spellSample', root).onclick=()=>{ $('#spellText', root).value='The defendant did knowingly and willfully commit severall acts of mispelled words, gramar offenses, and punctuation neglect. It is obvous that the accused has showen a reckless disregard for the rules of english language. Furthermore, the there actions have caused confusion.'; };
-  $('#spellJudge', root).onclick=()=>{ const t=$('#spellText', root).value.toLowerCase(); const found=map.filter(w=>t.includes(w)); $('#spellList', root).textContent = found.length ? found.join('\n') : 'none'; $('#spellCounts', root).textContent = `${found.length} issues detected`; $('#spellVerdict', root).textContent = found.length ? 'GUILTY' : 'CLEARED'; spawnParticles(['§','⚖','✦'],'#f0c06c',22); };
+  const typoMap={'조아서':'좋아서','갔읍니다':'갔습니다','만아서':'많아서','되요':'돼요','안되요':'안 돼요','몇일':'며칠','웬지':'왠지','할려고':'하려고','금새':'금세','어의없다':'어이없다','왠만하면':'웬만하면'};
+  $('#spellSample', root).onclick=()=>{ $('#spellText', root).value='오늘은 날씨가 조아서 친구와 공원에 갔읍니다. 생각보다 사람이 만아서 놀랐고, 금새 집에 돌아왔습니다.'; };
+  $('#spellJudge', root).onclick=()=>{
+    let t=$('#spellText', root).value; const found=[];
+    for(const [wrong,right] of Object.entries(typoMap).sort((a,b)=>b[0].length-a[0].length)){ if(t.includes(wrong)){found.push(`${wrong} → ${right}`); t=t.split(wrong).join(right);} }
+    $('#spellList', root).textContent=found.length?found.join('\n'):'혐의 없음'; $('#spellCounts', root).textContent=`혐의 ${found.length}건`; $('#spellVerdict', root).textContent=found.length?'유죄':'무혐의';
+    if(found.length) $('#spellText', root).value=t; spawnParticles(['§','⚖','✦'],'#f0c06c',22);
+  };
 }
 
 function initDownload(root){
   const log=$('#dlLog', root), timer=$('#dlTimer', root);
   $('#dlLaunch', root).onclick=()=>{
-    let s=5; log.textContent='launch sequence initiated...'; const iv=setInterval(()=>{ s--; timer.textContent=`00:00:0${s}`; if(s<=0){ clearInterval(iv); const blob=new Blob([$('#dlContent', root).value],{type:'text/plain'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=$('#dlName', root).value || 'payload.txt'; a.click(); log.textContent='payload reached local orbit. download complete.'; spawnParticles(['🚀','🔥','✦'],'#7cc9ff',24);} },1000);
+    let s=5; log.textContent='발사 절차 시작...'; const iv=setInterval(()=>{ s--; timer.textContent=`00:00:0${s}`; if(s<=0){ clearInterval(iv); const blob=new Blob([$('#dlContent', root).value],{type:'text/plain'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=$('#dlName', root).value || 'payload.txt'; a.click(); log.textContent='파일이 다운로드 궤도에 도착했습니다.'; spawnParticles(['🚀','🔥','✦'],'#7cc9ff',24);} },1000);
   };
 }
 
 function initRandom(root){
   const log=$('#randLog', root), recent=$('#randRecent', root); let rows=[];
-  $('#randGo', root).onclick=()=>{ const min=+$('#randMin', root).value, max=+$('#randMax', root).value; const n=Math.floor(Math.random()*(max-min+1))+min; $('#randOut', root).textContent=n; const time=(Math.random()*5).toFixed(2); $('#randTime', root).textContent=`generation time: ${time} ms`; log.textContent=`initializing RNG...\nentropy pool: ${(95+Math.random()*5).toFixed(1)}%\noutcome generated: ${n}`; rows.unshift(`${new Date().toLocaleTimeString()} -> ${n}`); rows=rows.slice(0,6); recent.textContent=rows.join('\n'); };
+  $('#randGo', root).onclick=()=>{ const min=Math.ceil(+$('#randMin', root).value), max=Math.floor(+$('#randMax', root).value), qty=Math.max(1,Math.min(100,+$('#randQty', root).value||1));
+    if(max<min){log.textContent='최댓값은 최솟값보다 커야 합니다.';return;}
+    const range=max-min+1, bytes=new Uint32Array(qty); if(globalThis.crypto?.getRandomValues) crypto.getRandomValues(bytes); else for(let i=0;i<qty;i++)bytes[i]=Math.floor(Math.random()*2**32);
+    const nums=[...bytes].map(v=>min+(v%range)); const shown=qty===1?String(nums[0]):nums.join(', '); $('#randOut', root).textContent=shown; $('#randOut', root).style.fontSize=qty>8?'clamp(24px,4vw,48px)':'';
+    const time=(Math.random()*4+.2).toFixed(2); $('#randTime', root).textContent=`생성 시간: ${time}밀리초`; log.textContent=`난수 장치 초기화\n난수 재료 충전 ${(95+Math.random()*5).toFixed(1)}%\n${qty}개 결과 확정`;
+    rows.unshift(`${new Date().toLocaleTimeString()} → ${shown.slice(0,80)}`); rows=rows.slice(0,6); recent.textContent=rows.join('\n'); };
 }
 
 function initQuiz(root){
   let hp=12000, answer=43;
   function newQ(){ const a=Math.floor(Math.random()*20)+10,b=Math.floor(Math.random()*8)+2,c=Math.floor(Math.random()*9)+2,d=Math.floor(Math.random()*8)+2; answer = Math.floor(a/b)+c*d; $('#quizEq', root).textContent=`(${a} ÷ ${b}) + (${c} × ${d}) = ?`; }
   newQ();
-  $('#quizCast', root).onclick=()=>{ const v=+$('#quizAns', root).value; if(v===answer){ hp=Math.max(0,hp-1250); $('#quizResult', root).textContent='CRITICAL HIT'; spawnParticles(['🐉','✨','💥'],'#a6ff6a',20);} else { $('#quizResult', root).textContent=`MISS // correct was ${answer}`; } $('#quizHp', root).textContent=hp; $('#quizBar', root).style.width=`${hp/120}%`; $('#quizLog', root).textContent=`Ancient dragon HP now ${hp}\nlatest answer ${v}`; newQ(); };
+  $('#quizCast', root).onclick=()=>{ const v=+$('#quizAns', root).value; if(v===answer){ hp=Math.max(0,hp-1250); $('#quizResult', root).textContent='치명타'; spawnParticles(['🐉','✨','💥'],'#a6ff6a',20);} else { $('#quizResult', root).textContent=`빗나감 / 정답은 ${answer}`; } $('#quizHp', root).textContent=hp; $('#quizBar', root).style.width=`${hp/120}%`; $('#quizLog', root).textContent=`고대 드래곤 남은 체력 ${hp}\n최근 답안 ${v}`; newQ(); };
 }
 
 function initCompress(root){
-  let size=12.4*1024*1024;
-  $('#cmpFile', root).onchange=(e)=>{ const f=e.target.files[0]; if(f){ size=f.size; $('#cmpBefore', root).textContent=formatBytes(size); } };
+  let file=null, sourceImage=null, sourceSize=12.4*1024*1024, lastUrl=null;
+  const fileInput=$('#cmpFile', root), log=$('#cmpLog', root);
+  fileInput.onchange=(e)=>{ file=e.target.files[0]||null; if(!file)return; sourceSize=file.size; $('#cmpBefore', root).textContent=formatBytes(sourceSize); const reader=new FileReader(); reader.onload=()=>{const img=new Image();img.onload=()=>{sourceImage=img;log.textContent=`이미지 적재 완료\n해상도 ${img.width} × ${img.height}\n프레스 가동 가능`;};img.src=reader.result;};reader.readAsDataURL(file); };
   $('#cmpRatio', root).oninput=()=>{ $('#cmpRatioOut', root).textContent=`${$('#cmpRatio', root).value}%`; };
-  $('#cmpRun', root).onclick=()=>{ const ratio=+$('#cmpRatio', root).value/100; const after=size*(1-ratio); $('#cmpAfter', root).textContent=formatBytes(after); $('#cmpLog', root).textContent=`guard doors locked\napplying pressure profile ${(ratio*100).toFixed(0)}%\ncompression finished`; spawnParticles(['🗜','⚙','✦'],'#ffb24d',16); };
+  $('#cmpRun', root).onclick=()=>{ const ratio=+$('#cmpRatio', root).value/100;
+    if(!sourceImage){ const after=sourceSize*(1-ratio); $('#cmpAfter', root).textContent=formatBytes(after); log.textContent='예시 이미지 기준 압축 시뮬레이션 완료\n실제 파일을 넣으면 다운로드 파일을 생성합니다.'; spawnParticles(['🗜','⚙','✦'],'#ffb24d',16); return; }
+    const canvas=document.createElement('canvas'); canvas.width=sourceImage.naturalWidth; canvas.height=sourceImage.naturalHeight; const ctx=canvas.getContext('2d'); ctx.drawImage(sourceImage,0,0);
+    const quality=Math.max(.08,Math.min(.92,1-ratio*.88)); canvas.toBlob(blob=>{ if(!blob){log.textContent='압축에 실패했습니다.';return;} $('#cmpAfter', root).textContent=formatBytes(blob.size); log.textContent=`압축 완료\n${formatBytes(sourceSize)} → ${formatBytes(blob.size)}\n감소율 ${Math.max(0,(1-blob.size/sourceSize)*100).toFixed(1)}%`; if(lastUrl)URL.revokeObjectURL(lastUrl);lastUrl=URL.createObjectURL(blob); let a=root.querySelector('#cmpDownload'); if(!a){a=document.createElement('a');a.id='cmpDownload';a.className='btn';a.style.display='inline-block';a.style.marginTop='12px';a.textContent='압축 파일 내려받기';log.insertAdjacentElement('afterend',a);}a.href=lastUrl;a.download=(file?.name?.replace(/\.[^.]+$/,'')||'compressed')+'.jpg'; spawnParticles(['🗜','⚙','✦'],'#ffb24d',16); },'image/jpeg',quality);
+  };
 }
 
 function initCompat(root){
@@ -454,11 +483,11 @@ function initCompat(root){
 function initVolume(root){
   const board=$('#faderBoard', root), channels=['KICK','SNARE','BASS','LEAD','SYNTH','VOCAL','FX','MASTER'];
   board.innerHTML = channels.map((ch,i)=>`<div class="fader"><div class="sub">${ch}</div><div class="meter-v"><i style="height:${50+i*5}%"></i></div><input type="range" min="0" max="100" value="${55+i*4}" data-fader="${ch}"><div class="badge" data-meter="${ch}">${55+i*4}</div></div>`).join('');
-  board.oninput=(e)=>{ if(e.target.matches('input[type="range"]')){ const ch=e.target.dataset.fader; $(`[data-meter="${ch}"]`, root).textContent=e.target.value; const avg=[...board.querySelectorAll('input')].reduce((a,b)=>a + +b.value, 0)/8; $('#volEnergy', root).textContent=`${Math.round(avg)}%`; $('#volLatency', root).textContent=`${Math.max(4,Math.round(24-avg/5))}ms`; $('#volLog', root).textContent=`mix updated // ${ch} -> ${e.target.value}`; } };
+  board.oninput=(e)=>{ if(e.target.matches('input[type="range"]')){ const ch=e.target.dataset.fader; $(`[data-meter="${ch}"]`, root).textContent=e.target.value; const avg=[...board.querySelectorAll('input')].reduce((a,b)=>a + +b.value, 0)/8; $('#volEnergy', root).textContent=`${Math.round(avg)}%`; $('#volLatency', root).textContent=`${Math.max(4,Math.round(24-avg/5))}ms`; $('#volLog', root).textContent=`음향 조정 / ${ch} → ${e.target.value}`; } };
 }
 
 function initRefresh(root){
-  $('#refGo', root).onclick=()=>{ $('#refState', root).textContent='causality breach imminent...'; doFlash(); spawnParticles(['🕒','⌛','◌'],'#9f8bff',26); setTimeout(()=>location.reload(), 1800); };
+  $('#refGo', root).onclick=()=>{ $('#refState', root).textContent='인과관계 붕괴가 임박했습니다...'; doFlash(); spawnParticles(['🕒','⌛','◌'],'#9f8bff',26); setTimeout(()=>location.reload(), 1800); };
 }
 
 // basic syntax guard use
