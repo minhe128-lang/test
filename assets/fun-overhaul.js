@@ -147,16 +147,12 @@
   }
 
   function runShow(id){
-    const cfg=SHOWS[id]; if(!cfg||document.querySelector('.cinema')) return;
+    const cfg=SHOWS[id]; if(!cfg) return;
     sessionScore+=Math.floor(700+Math.random()*900);sessionCombo++;updateHud();
-    const app=document.querySelector(`#app-${id}`); const color=getComputedStyle(app||document.documentElement).getPropertyValue('--accent').trim()||'#7ff0ff';
-    const el=document.createElement('div');el.className=`cinema cinema-${id}`;el.style.setProperty('--accent',color);
-    el.innerHTML=`<div class="cinema-grid"></div><div class="cinema-rain"></div><div class="cinema-ring"></div><div class="cinema-core"><div class="cinema-symbol">${cfg.symbol}</div><div class="cinema-title">${cfg.title}</div><div class="cinema-step">${cfg.steps[0]}</div><div class="cinema-bar"><i></i></div><div class="cinema-count">진행 0%</div></div><div class="cinema-stamp">${cfg.stamp}</div>`;
-    document.body.appendChild(el); tone(id,0);
-    const step=el.querySelector('.cinema-step'),bar=el.querySelector('.cinema-bar i'),count=el.querySelector('.cinema-count');
-    let i=0;
-    const next=()=>{i++; const pct=Math.min(100,Math.round(i/cfg.steps.length*100));bar.style.width=pct+'%';count.textContent=`진행 ${pct}%`;if(i<cfg.steps.length){step.textContent=cfg.steps[i];tone(id,i);}else{el.classList.add('done');step.textContent=cfg.stamp;particleBurst(cfg.chars,color);tone(id,5);toast('업적 해제: '+(ACHIEVEMENTS[id]||'쓸데없이 거창하게 처리함'));setTimeout(()=>{el.classList.add('out');setTimeout(()=>el.remove(),360)},650);return;}setTimeout(next,360)};
-    setTimeout(next,280);
+    tone(id,0);
+    setTimeout(()=>tone(id,2),180);
+    setTimeout(()=>tone(id,5),420);
+    toast(`${cfg.symbol} ${cfg.stamp} · 업적: ${ACHIEVEMENTS[id]||'쓸데없이 거창하게 처리함'}`);
   }
 
   function toast(text){const t=document.createElement('div');t.className='fun-toast';t.textContent=text;document.body.appendChild(t);setTimeout(()=>t.remove(),2300)}
