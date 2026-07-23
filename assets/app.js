@@ -1,24 +1,24 @@
 const APPS = [
-  {id:'weather', title:'천지개벽 날씨국', icon:'🌦️', color:'#4dceff', scene:'assets/mockups/weather.webp', cls:'theme-blue', dock:'right'},
-  {id:'button', title:'궁극의 확인 버튼', icon:'🔘', color:'#ff5c5c', scene:'assets/mockups/button.webp', cls:'theme-red', dock:'bottom'},
-  {id:'todo', title:'마왕 토벌 투두', icon:'⚔️', color:'#d9a74a', scene:'assets/mockups/todo.webp', cls:'theme-gold', dock:'left'},
-  {id:'timer', title:'종말 집중 타이머', icon:'☢️', color:'#d7ff4d', scene:'assets/mockups/timer.webp', cls:'theme-gold', dock:'right'},
-  {id:'password', title:'해킹식 비밀번호 생성', icon:'💻', color:'#59ff83', scene:'assets/mockups/password.webp', cls:'theme-green', dock:'left'},
-  {id:'dice', title:'우주 창조 주사위', icon:'🎲', color:'#d48aff', scene:'assets/mockups/dice.webp', cls:'theme-purple', dock:'right'},
-  {id:'rps', title:'세계대전 가위바위보', icon:'✊', color:'#ff704d', scene:'assets/mockups/rps.webp', cls:'theme-red', dock:'left'},
-  {id:'currency', title:'금융위기 환율 계산', icon:'📉', color:'#ff6c57', scene:'assets/mockups/currency.webp', cls:'theme-red', dock:'right'},
-  {id:'counter', title:'문서 심문실', icon:'🔎', color:'#69b6ff', scene:'assets/mockups/counter.webp', cls:'theme-blue', dock:'bottom'},
-  {id:'lunch', title:'점심 신탁소', icon:'🍲', color:'#ffb14d', scene:'assets/mockups/lunch.webp', cls:'theme-gold', dock:'right'},
-  {id:'qr', title:'레이저 QR 제조소', icon:'▦', color:'#55e8ff', scene:'assets/mockups/qr.webp', cls:'theme-blue', dock:'left'},
-  {id:'nickname', title:'닉네임 각성 연구소', icon:'🧬', color:'#c76dff', scene:'assets/mockups/nickname.webp', cls:'theme-purple', dock:'right'},
-  {id:'spell', title:'맞춤법 대법원', icon:'⚖️', color:'#f0c06c', scene:'assets/mockups/spell.webp', cls:'theme-gold', dock:'left'},
-  {id:'download', title:'파일 발사 통제소', icon:'🚀', color:'#4aa6ff', scene:'assets/mockups/download.webp', cls:'theme-blue', dock:'right'},
-  {id:'random', title:'극비 난수 작전실', icon:'🎰', color:'#ff5c6b', scene:'assets/mockups/random.webp', cls:'theme-red', dock:'left'},
-  {id:'quiz', title:'산수 던전', icon:'🐉', color:'#91d45d', scene:'assets/mockups/quiz.webp', cls:'theme-gold', dock:'right'},
-  {id:'compress', title:'이미지 압축 프레스', icon:'🗜️', color:'#ff9d4c', scene:'assets/mockups/compress.webp', cls:'theme-gold', dock:'left'},
-  {id:'compat', title:'우주 궁합 판독기', icon:'🔮', color:'#ff7acc', scene:'assets/mockups/compat.webp', cls:'theme-purple', dock:'right'},
-  {id:'volume', title:'스타디움 볼륨 콘솔', icon:'🔊', color:'#4fe0c3', scene:'assets/mockups/volume.webp', cls:'theme-blue', dock:'bottom'},
-  {id:'refresh', title:'시간여행 새로고침', icon:'🌀', color:'#8f7cff', scene:'assets/mockups/refresh.webp', cls:'theme-purple', dock:'bottom'},
+  {id:'weather', title:'천지개벽 날씨국', icon:'🌦️', color:'#4dceff', scene:'assets/scenes/weather.webp', thumb:'assets/mockups/weather.webp', cls:'theme-blue', dock:'right'},
+  {id:'button', title:'궁극의 확인 버튼', icon:'🔘', color:'#ff5c5c', scene:'assets/scenes/button.webp', thumb:'assets/mockups/button.webp', cls:'theme-red', dock:'bottom'},
+  {id:'todo', title:'마왕 토벌 투두', icon:'⚔️', color:'#d9a74a', scene:'assets/scenes/todo.webp', thumb:'assets/mockups/todo.webp', cls:'theme-gold', dock:'left'},
+  {id:'timer', title:'종말 집중 타이머', icon:'☢️', color:'#d7ff4d', scene:'assets/scenes/timer.webp', thumb:'assets/mockups/timer.webp', cls:'theme-gold', dock:'right'},
+  {id:'password', title:'해킹식 비밀번호 생성', icon:'💻', color:'#59ff83', scene:'assets/scenes/password.webp', thumb:'assets/mockups/password.webp', cls:'theme-green', dock:'left'},
+  {id:'dice', title:'우주 창조 주사위', icon:'🎲', color:'#d48aff', scene:'assets/scenes/dice.webp', thumb:'assets/mockups/dice.webp', cls:'theme-purple', dock:'right'},
+  {id:'rps', title:'세계대전 가위바위보', icon:'✊', color:'#ff704d', scene:'assets/scenes/rps.webp', thumb:'assets/mockups/rps.webp', cls:'theme-red', dock:'left'},
+  {id:'currency', title:'금융위기 환율 계산', icon:'📉', color:'#ff6c57', scene:'assets/scenes/currency.webp', thumb:'assets/mockups/currency.webp', cls:'theme-red', dock:'right'},
+  {id:'counter', title:'문서 심문실', icon:'🔎', color:'#69b6ff', scene:'assets/scenes/counter.webp', thumb:'assets/mockups/counter.webp', cls:'theme-blue', dock:'bottom'},
+  {id:'lunch', title:'점심 신탁소', icon:'🍲', color:'#ffb14d', scene:'assets/scenes/lunch.webp', thumb:'assets/mockups/lunch.webp', cls:'theme-gold', dock:'right'},
+  {id:'qr', title:'레이저 QR 제조소', icon:'▦', color:'#55e8ff', scene:'assets/scenes/qr.webp', thumb:'assets/mockups/qr.webp', cls:'theme-blue', dock:'left'},
+  {id:'nickname', title:'닉네임 각성 연구소', icon:'🧬', color:'#c76dff', scene:'assets/scenes/nickname.webp', thumb:'assets/mockups/nickname.webp', cls:'theme-purple', dock:'right'},
+  {id:'spell', title:'맞춤법 대법원', icon:'⚖️', color:'#f0c06c', scene:'assets/scenes/spell.webp', thumb:'assets/mockups/spell.webp', cls:'theme-gold', dock:'left'},
+  {id:'download', title:'파일 발사 통제소', icon:'🚀', color:'#4aa6ff', scene:'assets/scenes/download.webp', thumb:'assets/mockups/download.webp', cls:'theme-blue', dock:'right'},
+  {id:'random', title:'극비 난수 작전실', icon:'🎰', color:'#ff5c6b', scene:'assets/scenes/random.webp', thumb:'assets/mockups/random.webp', cls:'theme-red', dock:'left'},
+  {id:'quiz', title:'산수 던전', icon:'🐉', color:'#91d45d', scene:'assets/scenes/quiz.webp', thumb:'assets/mockups/quiz.webp', cls:'theme-gold', dock:'right'},
+  {id:'compress', title:'이미지 압축 프레스', icon:'🗜️', color:'#ff9d4c', scene:'assets/scenes/compress.webp', thumb:'assets/mockups/compress.webp', cls:'theme-gold', dock:'left'},
+  {id:'compat', title:'우주 궁합 판독기', icon:'🔮', color:'#ff7acc', scene:'assets/scenes/compat.webp', thumb:'assets/mockups/compat.webp', cls:'theme-purple', dock:'right'},
+  {id:'volume', title:'스타디움 볼륨 콘솔', icon:'🔊', color:'#4fe0c3', scene:'assets/scenes/volume.webp', thumb:'assets/mockups/volume.webp', cls:'theme-blue', dock:'bottom'},
+  {id:'refresh', title:'시간여행 새로고침', icon:'🌀', color:'#8f7cff', scene:'assets/scenes/refresh.webp', thumb:'assets/mockups/refresh.webp', cls:'theme-purple', dock:'bottom'},
 ];
 
 const byId = (id) => document.getElementById(id);
@@ -29,7 +29,7 @@ let currentApp = null;
 
 const cardGrid = byId('toolGrid');
 cardGrid.innerHTML = APPS.map((app, i) => `
-<button class="launch-card" style="--scene:url('${app.scene}');--accent:${app.color}" data-app="${app.id}">
+<button class="launch-card" style="--scene:url('${app.thumb || app.scene}');--accent:${app.color}" data-app="${app.id}">
   <span class="enter">↗</span>
   <div class="sys">System ${String(i+1).padStart(2,'0')}</div>
   <span class="card-icon">${app.icon}</span>
@@ -70,15 +70,12 @@ function tagline(id){
 function shell(app, layoutClass, inner){
   return `
   <section class="app-screen ${app.cls}" id="app-${app.id}" style="--accent:${app.color};--scene:url('${app.scene}')">
-    <div class="app-frame dock-${app.dock || 'right'}">
+    <div class="app-frame">
       <div class="app-toolbar">
         <div class="meta"><b>${app.title}</b><span>${app.id.toUpperCase()} SYSTEM</span></div>
         <button class="close-app" data-close="1">← 도구함으로</button>
       </div>
-      <div class="workspace">
-        <div class="mockup-pane"><img class="mockup-img" src="${app.scene}" alt="${app.title}"></div>
-        <div class="control-pane"><div class="app-content app-unique ${layoutClass}">${inner}</div></div>
-      </div>
+      <div class="app-content app-unique ${layoutClass}">${inner}</div>
     </div>
   </section>`;
 }
@@ -273,6 +270,7 @@ const renderers = {
 
 function openApp(id){
   const app = APPS.find(a => a.id === id); if(!app) return;
+  if(location.hash !== '#'+id) history.replaceState(null,'','#'+id);
   mount.innerHTML = renderers[id](app);
   const screen = byId(`app-${id}`);
   screen.classList.add('open');
@@ -281,7 +279,7 @@ function openApp(id){
   screen.addEventListener('click', e => { if (e.target.dataset.close) closeApp(); });
   initApp(id, screen);
 }
-function closeApp(){ mount.innerHTML=''; currentApp=null; document.body.classList.remove('app-open'); }
+function closeApp(){ mount.innerHTML=''; currentApp=null; document.body.classList.remove('app-open'); if(location.hash) history.replaceState(null,'',location.pathname+location.search); }
 mount.addEventListener('click', e=>{ if(e.target.classList.contains('app-screen')) closeApp(); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape' && currentApp) closeApp(); });
 
@@ -464,3 +462,5 @@ function initRefresh(root){
 }
 
 // basic syntax guard use
+
+window.addEventListener('load',()=>{ const id=location.hash.slice(1); if(APPS.some(a=>a.id===id)) openApp(id); });

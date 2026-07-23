@@ -110,35 +110,174 @@ button{cursor:pointer}
 }
 
 
-/* --- mockup-driven redesign override --- */
+
+
+/* --- environment-background implementation --- */
 body.app-open .home-shell{visibility:hidden}
-.app-frame{display:flex;flex-direction:column;max-height:calc(100vh - 24px)}
-.workspace{display:grid;grid-template-columns:minmax(0,1fr) 430px;gap:0;min-height:0;flex:1}
-.app-frame.dock-left .workspace{grid-template-columns:430px minmax(0,1fr)}
-.app-frame.dock-left .mockup-pane{order:2;border-left:1px solid rgba(255,255,255,.1);border-right:0}
-.app-frame.dock-left .control-pane{order:1}
-.app-frame.dock-bottom .workspace{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) 360px}
-.mockup-pane{padding:16px;background:rgba(8,11,18,.82);border-right:1px solid rgba(255,255,255,.1);overflow:auto}
-.mockup-img{width:100%;display:block;border-radius:22px;border:1px solid rgba(255,255,255,.1);box-shadow:0 24px 60px rgba(0,0,0,.35)}
-.control-pane{overflow:auto;background:rgba(4,7,14,.88)}
-.control-pane .app-content{padding:16px;display:grid;gap:14px}
-.control-pane .app-unique{grid-template-columns:1fr !important}
-.control-pane .stack,.control-pane .flex{min-width:0}
-.control-pane .scene-window{display:none}
-.control-pane .big-display{font-size:clamp(28px,3vw,56px)}
-.control-pane .metric-grid.two,.control-pane .metric-grid.three,.control-pane .metric-grid.four,.control-pane .orbit-buttons,.control-pane .food-buttons,.control-pane .const-cards{grid-template-columns:1fr 1fr}
-.control-pane .fader-board{grid-template-columns:repeat(4,1fr)}
-.app-screen::before,.app-screen::after{display:none}
-.launch-card{min-height:250px}
-.launch-card .card-icon{margin:54px 0 10px;font-size:36px}
-.launch-card h3{font-size:22px}
-.hero-panel p{max-width:960px}
-@media (max-width:1180px){
-  .workspace,.app-frame.dock-left .workspace{grid-template-columns:1fr}
-  .app-frame.dock-bottom .workspace{grid-template-rows:auto auto}
-  .mockup-pane{border-right:0;border-bottom:1px solid rgba(255,255,255,.1)}
-  .app-frame.dock-left .mockup-pane{border-left:0;border-bottom:1px solid rgba(255,255,255,.1)}
+.app-screen::before{
+  background-image:linear-gradient(180deg,rgba(2,4,9,.28),rgba(2,4,9,.72)),var(--scene);
+  background-size:cover;background-position:center;filter:saturate(1.08) brightness(.72) blur(1px);transform:scale(1.02)
 }
-@media (max-width:760px){
-  .control-pane .metric-grid.two,.control-pane .metric-grid.three,.control-pane .metric-grid.four,.control-pane .orbit-buttons,.control-pane .food-buttons,.control-pane .const-cards,.control-pane .fader-board{grid-template-columns:1fr}
+.app-screen::after{display:block;background:
+  radial-gradient(circle at 50% 12%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 34%),
+  linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.4));
 }
+.app-frame{background:rgba(5,8,14,.42);backdrop-filter:blur(8px);border-color:rgba(255,255,255,.16)}
+.app-content{min-height:calc(100vh - 82px);align-content:center}
+.panel{backdrop-filter:blur(12px)}
+.scene-window{background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.55)),var(--scene)}
+
+/* 01 Weather command center */
+#app-weather .app-frame{border-radius:10px;background:rgba(4,20,33,.38)}
+#app-weather .app-toolbar{background:rgba(3,25,43,.88);border-color:rgba(88,219,255,.24)}
+#app-weather .panel{border-radius:8px;background:linear-gradient(180deg,rgba(7,43,67,.82),rgba(3,20,34,.82));border-color:rgba(92,220,255,.22)}
+#app-weather .metric{border-radius:6px;background:rgba(71,195,238,.08)}
+#app-weather .scene-window{border-radius:8px;box-shadow:inset 0 0 40px rgba(39,196,255,.18)}
+#app-weather .btn{border-radius:4px;text-transform:uppercase;letter-spacing:.12em}
+
+/* 02 Confirm chamber */
+#app-button .app-frame{background:rgba(29,2,7,.38);border-radius:38px;border-color:rgba(255,97,97,.22)}
+#app-button .app-toolbar{background:rgba(43,3,8,.9)}
+#app-button .layout-button{align-items:center}
+#app-button .panel{background:linear-gradient(180deg,rgba(63,8,12,.86),rgba(22,2,5,.86));border-color:rgba(255,94,94,.22);border-radius:28px}
+#app-button .choice-item{border-radius:999px;background:rgba(255,71,71,.08)}
+#app-button #confirmCore{box-shadow:0 0 0 12px rgba(255,255,255,.04),0 0 70px rgba(255,56,56,.45)}
+
+/* 03 Fantasy quest guild */
+#app-todo .app-frame{background:rgba(40,20,7,.34);border:8px ridge rgba(117,72,29,.75);border-radius:12px}
+#app-todo .app-toolbar{background:linear-gradient(180deg,rgba(76,42,16,.95),rgba(38,18,5,.95));font-family:Georgia,serif}
+#app-todo .app-content,#app-todo .panel,#app-todo button,#app-todo input{font-family:Georgia,"Times New Roman",serif}
+#app-todo .panel{border-radius:3px;background:linear-gradient(180deg,rgba(73,40,13,.86),rgba(39,19,5,.88));border-color:rgba(239,189,107,.26);box-shadow:inset 0 0 0 3px rgba(86,49,14,.55)}
+#app-todo .choice-item{border-radius:2px;background:linear-gradient(180deg,rgba(244,218,168,.12),rgba(110,64,19,.12));border-color:rgba(240,198,120,.2)}
+#app-todo .btn{border-radius:2px;background:linear-gradient(180deg,#f3d49a,#b8782e);color:#2c1302}
+
+/* 04 Doomsday bunker */
+#app-timer .app-frame{background:rgba(16,18,3,.42);border-radius:6px;border:3px solid rgba(199,219,64,.28)}
+#app-timer .app-toolbar{background:repeating-linear-gradient(-45deg,rgba(190,207,57,.12) 0 12px,rgba(15,18,3,.9) 12px 24px)}
+#app-timer .panel{border-radius:4px;background:linear-gradient(180deg,rgba(37,43,10,.9),rgba(10,13,3,.9));border-color:rgba(205,226,71,.25)}
+#app-timer .big-display{font-family:ui-monospace,monospace;color:#eaff6a;text-shadow:0 0 25px rgba(215,255,77,.42)}
+#app-timer .btn,#app-timer .btn-ghost,#app-timer .btn-danger{border-radius:3px;text-transform:uppercase}
+
+/* 05 Hacker terminal */
+#app-password .app-screen,#app-password .app-frame,#app-password input,#app-password button,#app-password .panel{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+#app-password .app-frame{background:rgba(0,10,4,.42);border-radius:0;border-color:rgba(65,255,129,.24)}
+#app-password .app-toolbar{background:#020b05;border-color:rgba(65,255,129,.2)}
+#app-password .panel{border-radius:0;background:rgba(0,14,5,.9);border-color:rgba(65,255,129,.18);box-shadow:inset 0 0 28px rgba(58,255,124,.04)}
+#app-password .field,#app-password .select,#app-password .area,#app-password .log{border-radius:0;background:#010802;color:#6cff9e;border-color:rgba(65,255,129,.18)}
+#app-password .btn,#app-password .btn-ghost{border-radius:0;background:#052812;color:#76ffa5;border:1px solid rgba(76,255,140,.25);box-shadow:none}
+
+/* 06 Cosmic dice temple */
+#app-dice .app-frame{background:rgba(21,8,43,.36);border-radius:48px;border-color:rgba(210,152,255,.2)}
+#app-dice .app-toolbar{background:rgba(27,10,56,.86)}
+#app-dice .panel{background:radial-gradient(circle at 50% 0%,rgba(185,114,255,.16),rgba(17,7,38,.86));border-color:rgba(215,167,255,.18);border-radius:30px}
+#app-dice .choice-item,#app-dice .btn-ghost{border-radius:999px}
+#app-dice #diceValue{text-shadow:0 0 36px rgba(212,138,255,.8)}
+
+/* 07 Military RPS */
+#app-rps .app-frame{background:rgba(29,3,5,.4);border-radius:2px;border:2px solid rgba(255,75,75,.26)}
+#app-rps .app-toolbar{background:rgba(49,4,7,.92)}
+#app-rps .panel{border-radius:2px;background:linear-gradient(180deg,rgba(55,7,8,.9),rgba(18,2,3,.9));border-color:rgba(255,82,82,.22)}
+#app-rps .war-buttons button{border-radius:2px;background:linear-gradient(180deg,rgba(255,71,71,.14),rgba(34,2,3,.5));font-size:26px;min-height:110px}
+#app-rps .warning-strip{border-radius:2px;text-transform:uppercase;letter-spacing:.08em}
+
+/* 08 Market meltdown */
+#app-currency .app-frame{background:rgba(12,2,3,.42);border-radius:0}
+#app-currency .app-toolbar{background:#130203}
+#app-currency .panel{border-radius:0;background:rgba(16,4,5,.9);border-color:rgba(255,88,88,.18)}
+#app-currency .metric,#app-currency .choice-item{border-radius:0}
+#app-currency #curOutput{color:#ff615c;text-shadow:0 0 24px rgba(255,74,67,.35)}
+#app-currency .btn{border-radius:0;background:linear-gradient(180deg,#ff7f72,#b31318);color:#fff}
+
+/* 09 Interrogation room */
+#app-counter .app-frame{background:rgba(22,25,30,.38);border-radius:3px;border-color:rgba(194,213,235,.16)}
+#app-counter .app-toolbar{background:rgba(27,31,37,.92)}
+#app-counter .panel{border-radius:3px;background:linear-gradient(180deg,rgba(61,68,79,.82),rgba(21,24,30,.9));border-color:rgba(206,220,240,.14)}
+#app-counter .area{min-height:280px;border-radius:0;background:#e6e2d5;color:#1b1d21;font-family:ui-monospace,monospace;box-shadow:inset 0 0 40px rgba(0,0,0,.12)}
+#app-counter .metric{border-radius:2px;background:rgba(10,13,17,.52)}
+#app-counter .log{color:#d6e5ff;background:rgba(10,12,15,.86)}
+
+/* 10 Lunch oracle shrine */
+#app-lunch .app-frame{background:rgba(61,27,4,.34);border-radius:40px;border:4px double rgba(255,188,89,.3)}
+#app-lunch .app-toolbar{background:rgba(73,33,6,.9);font-family:Georgia,serif}
+#app-lunch .panel{border-radius:34px;background:radial-gradient(circle at 50% 0%,rgba(255,195,96,.18),rgba(56,24,3,.88));border-color:rgba(255,195,99,.22)}
+#app-lunch .food-buttons button{border-radius:50%;aspect-ratio:1;background:radial-gradient(circle,rgba(255,210,124,.18),rgba(93,40,6,.6));font-size:16px}
+#app-lunch .btn{border-radius:999px;background:linear-gradient(180deg,#ffe3a8,#cf7722)}
+
+/* 11 Laser QR lab */
+#app-qr .app-frame{background:rgba(1,28,34,.36);border-radius:10px}
+#app-qr .app-toolbar{background:rgba(2,38,47,.92)}
+#app-qr .panel{border-radius:8px;background:linear-gradient(180deg,rgba(6,61,71,.86),rgba(1,24,29,.9));border-color:rgba(77,232,255,.22)}
+#app-qr .field,#app-qr .select,#app-qr .btn{border-radius:4px}
+#app-qr #qrOutput{box-shadow:0 0 40px rgba(85,232,255,.28)}
+
+/* 12 Nickname bio lab */
+#app-nickname .app-frame{background:rgba(34,5,47,.36);border-radius:28px}
+#app-nickname .app-toolbar{background:rgba(48,7,67,.9)}
+#app-nickname .panel{border-radius:22px;background:linear-gradient(180deg,rgba(77,18,105,.84),rgba(24,5,34,.9));border-color:rgba(207,118,255,.2)}
+#app-nickname #nickOut{text-shadow:0 0 32px rgba(199,109,255,.75)}
+#app-nickname .btn{border-radius:999px}
+
+/* 13 Supreme court */
+#app-spell .app-frame{background:rgba(47,28,12,.38);border:7px ridge rgba(122,83,35,.8);border-radius:5px}
+#app-spell .app-toolbar,#app-spell .panel,#app-spell button,#app-spell textarea{font-family:Georgia,"Times New Roman",serif}
+#app-spell .app-toolbar{background:linear-gradient(180deg,#4b2b11,#291506)}
+#app-spell .panel{border-radius:2px;background:linear-gradient(180deg,rgba(82,52,27,.88),rgba(37,21,8,.92));border-color:rgba(238,196,122,.24);box-shadow:inset 0 0 0 3px rgba(101,65,27,.4)}
+#app-spell .area{background:#efe4c9;color:#241a0d;border-radius:0;min-height:260px}
+#app-spell .btn{border-radius:2px;background:linear-gradient(180deg,#e6c77f,#9b6424);color:#2a1603}
+
+/* 14 Rocket control */
+#app-download .app-frame{background:rgba(3,18,37,.36);border-radius:7px}
+#app-download .app-toolbar{background:rgba(3,29,57,.92)}
+#app-download .panel{border-radius:6px;background:linear-gradient(180deg,rgba(8,48,82,.84),rgba(2,19,36,.92));border-color:rgba(80,166,255,.22)}
+#app-download .btn-danger{clip-path:polygon(15% 0,85% 0,100% 50%,85% 100%,15% 100%,0 50%);border-radius:0;padding:22px 50px}
+#app-download #dlTimer{font-family:ui-monospace,monospace;color:#89cfff}
+
+/* 15 Black-ops RNG */
+#app-random .app-frame{background:rgba(20,2,7,.4);border-radius:0;border:2px solid rgba(255,75,93,.24)}
+#app-random .app-toolbar{background:#1e0208}
+#app-random .panel{border-radius:0;background:rgba(26,3,8,.9);border-color:rgba(255,76,96,.2)}
+#app-random .field,#app-random .btn,#app-random .log{border-radius:0;font-family:ui-monospace,monospace}
+#app-random #randOut{color:#ff5268;text-shadow:0 0 30px rgba(255,60,84,.45)}
+
+/* 16 Math dragon dungeon */
+#app-quiz .app-frame{background:rgba(19,25,6,.34);border:8px ridge rgba(78,94,31,.7);border-radius:10px}
+#app-quiz .app-toolbar{background:linear-gradient(180deg,#263308,#101904);font-family:Georgia,serif}
+#app-quiz .panel{border-radius:6px;background:linear-gradient(180deg,rgba(45,59,14,.86),rgba(13,19,4,.92));border-color:rgba(149,211,79,.22)}
+#app-quiz #quizEq{font-family:Georgia,serif;color:#caff7c;text-shadow:0 0 20px rgba(150,222,81,.4)}
+#app-quiz .btn{border-radius:999px;background:linear-gradient(180deg,#d7ff99,#6fa52e)}
+
+/* 17 Industrial compression press */
+#app-compress .app-frame{background:rgba(32,29,24,.4);border-radius:0;border:4px solid rgba(255,155,66,.22)}
+#app-compress .app-toolbar{background:repeating-linear-gradient(-45deg,#2b261f 0 16px,#17130f 16px 32px)}
+#app-compress .panel{border-radius:2px;background:linear-gradient(180deg,rgba(67,61,53,.9),rgba(24,22,19,.92));border-color:rgba(255,159,76,.2)}
+#app-compress .field,#app-compress .btn{border-radius:2px}
+#app-compress .btn{background:linear-gradient(180deg,#ffbd73,#bd5b19)}
+
+/* 18 Celestial compatibility */
+#app-compat .app-frame{background:rgba(45,9,36,.34);border-radius:56px;border:3px double rgba(255,134,209,.24)}
+#app-compat .app-toolbar{background:rgba(58,13,49,.86);font-family:Georgia,serif}
+#app-compat .panel{border-radius:38px;background:radial-gradient(circle at 50% 0%,rgba(255,134,209,.15),rgba(42,8,34,.86));border-color:rgba(255,134,209,.18)}
+#app-compat .field,#app-compat .btn{border-radius:999px}
+#app-compat #compScore{text-shadow:0 0 32px rgba(255,122,204,.55)}
+
+/* 19 Stadium mixing console */
+#app-volume .app-frame{background:rgba(1,25,24,.36);border-radius:12px}
+#app-volume .app-toolbar{background:rgba(2,39,37,.9)}
+#app-volume .panel{border-radius:8px;background:linear-gradient(180deg,rgba(6,59,57,.86),rgba(1,22,21,.92));border-color:rgba(79,224,195,.18)}
+#app-volume .fader{border-radius:4px;background:#071817}
+#app-volume .btn,#app-volume .btn-ghost{border-radius:4px}
+
+/* 20 Temporal portal */
+#app-refresh .app-frame{background:rgba(16,11,49,.34);border-radius:50px;border-color:rgba(143,124,255,.22)}
+#app-refresh .app-toolbar{background:rgba(22,15,67,.88)}
+#app-refresh .panel{border-radius:30px;background:radial-gradient(circle at 50% 0%,rgba(143,124,255,.16),rgba(14,9,44,.88));border-color:rgba(143,124,255,.2)}
+#app-refresh #refGo{border-radius:50%;aspect-ratio:1;padding:24px;box-shadow:0 0 0 12px rgba(143,124,255,.06),0 0 70px rgba(143,124,255,.35)}
+
+@media (max-width:1200px){
+  .app-content{align-content:start}
+}
+
+/* Generated artwork is atmosphere only. Never render it as a pasted UI panel. */
+.app-screen .scene-window{display:none!important}
+.app-frame{background:rgba(5,8,14,.28)}
+.app-screen::before{filter:saturate(1.12) brightness(.68) blur(1px)}
