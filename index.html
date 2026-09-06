@@ -1,46 +1,40 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#05070d" />
-  <title>쓸데없이 거대한 도구함</title>
-  <link rel="stylesheet" href="assets/app.css" />
-  <link rel="stylesheet" href="assets/fun-overhaul.css" />
-  <link rel="stylesheet" href="assets/maximal-overhaul.css" />
-  <link rel="stylesheet" href="assets/operation-stage.css" />
-  <link rel="stylesheet" href="assets/ultra-overdrive.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101114"><meta name="description" content="사소한 일에 우주급 진심. 서로 다른 조작으로 직접 움직이는 20개의 과잉 설계 오락실.">
+<title>OVERKILL — 쓸데없이 거대한 오락실</title>
+<link rel="stylesheet" href="assets/arcade.css">
 </head>
 <body>
-  <main class="home-shell">
-    <section class="hero-panel">
-      <div class="hero-kicker">사소한 일을 국가 행사처럼 처리하는 곳</div>
-      <h1>쓸데없이 거대한<br><span>도구함 20선</span></h1>
-      <p>글자 수 하나 세고, 주사위 하나 굴리고, 파일 하나 내려받는 데 왜 이렇게까지 해야 하는지는 아무도 모릅니다. 다만 누르는 맛은 있어야 합니다.</p>
-      <div class="hero-chips">
-        <span>전부 실제 작동</span>
-        <span>도구마다 전용 연출</span>
-        <span>한국어 중심</span>
-      </div>
-      <div class="hero-meter"><span>현재 과잉 연출 수치</span><b>999%</b><i></i></div>
-    </section>
-
-    <section class="home-guide">
-      <strong>도구 하나를 고르십시오</strong>
-      <span>평범하게 처리할 수 있는 일도 굳이 거창하게 처리합니다.</span>
-    </section>
-    <section class="card-grid" id="toolGrid"></section>
-  </main>
-
-  <div id="appMount"></div>
-  <div id="fxLayer"></div>
-  <button id="soundToggle" class="sound-toggle" aria-label="효과음 켜기/끄기">🔊</button>
-
-  <script src="assets/app.js"></script>
-  <script src="assets/fun-overhaul.js"></script>
-  <script src="assets/maximal-overhaul.js"></script>
-  <script src="assets/operation-stage.js"></script>
-  <script src="assets/ultra-overdrive.js"></script>
-</body>
-</html>
+<a class="skip-link" href="#catalog">실험 목록으로</a>
+<header class="site-header" id="siteHeader">
+ <a class="brand" href="#" aria-label="오버킬 오락실 홈"><span class="brand-symbol">O<span>↗</span></span><span>OVERKILL<small>UNNECESSARY. EXTRAORDINARY.</small></span></a>
+ <nav class="header-actions" aria-label="환경 설정"><span class="offline"><i></i> OFFLINE READY</span><button class="icon-btn" id="motionToggle" aria-pressed="false" title="효과 줄이기">효과 <b>FULL</b></button><button class="icon-btn" id="soundToggle" aria-pressed="false" title="소리 켜기">소리 <b>OFF</b></button></nav>
+</header>
+<main id="home">
+ <section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="pill">INTERACTIVE PLAYGROUND</span><span>VOL. 02 / 20 EXPERIMENTS</span></div>
+   <h1>사소한 일에,<br><span>우주급 진심.</span></h1>
+   <p>주사위 하나 던지는 데 은하까지 필요한가요?<br>필요 없죠. 그래서 준비했습니다.</p>
+   <div class="hero-actions"><button class="primary" data-open="dice">첫 번째 궤도에 진입 <span>↗</span></button><button class="text-btn" id="surprise">아무거나 맡겨보기 ↗</button></div>
+   <div class="hero-spec"><div><b>20</b><span>서로 다른 플레이</span></div><div><b>0</b><span>설치 · 로그인 · 광고</span></div><div><b>∞</b><span>재도전할 핑계</span></div></div>
+  </div>
+  <button class="hero-art" data-open="dice" aria-label="우주 창조 주사위 플레이"><img src="assets/scenes/dice.webp" alt="보랏빛 궤도와 주사위가 떠 있는 우주 관측실" fetchpriority="high"><div class="hero-art-shade"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span><span class="art-coordinate">X 041.82<br>Y 027.60<br>GRAVITY: ACTIVE</span><div class="hero-sticker"><span>이번 실험</span><strong>우주 창조 주사위</strong><small>끌고, 놓고, 궤도를 부수세요. ↗</small></div><span class="art-index">01 / 20</span></button>
+ </section>
+ <div class="manifesto"><span><i></i> 20개 실험의 핵심 장치를 직접 조작하세요.</span><span>구경은 그만. 이제 건드려 보세요. <b>↓</b></span></div>
+ <section class="collection" id="catalog" aria-labelledby="collectionTitle"><div class="section-title"><div><div class="eyebrow">THE COLLECTION</div><h2 id="collectionTitle">오늘의 쓸데없는 위업</h2></div><div class="collection-progress"><span id="progressText">발견한 실험 0 / 20</span><div><i id="progressBar"></i></div></div></div>
+  <div class="catalog-toolbar"><div class="filters" role="group" aria-label="게임 분류" id="filters"></div><label class="search"><span>⌕</span><input id="gameSearch" type="search" placeholder="이름 · 조작으로 찾기" aria-label="게임 검색"></label></div>
+  <div id="gameGrid" class="game-grid"></div><p id="emptySearch" class="empty-search" hidden>해당하는 실험이 없습니다. 다른 이름이나 조작으로 검색하세요.</p>
+ </section>
+ <footer class="site-footer"><span class="footer-brand">OVERKILL<span> / </span>효율을 포기하고, 손맛을 택했습니다.</span><span>20 TOYS. NO REASON. JUST PLAY.</span></footer>
+</main>
+<section id="gameView" hidden aria-label="게임 화면"></section>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="no-script">이 오락실은 JavaScript를 사용합니다. 브라우저에서 JavaScript를 켠 후 다시 열어 주세요.</p></noscript>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/games-physics.js"></script>
+<script src="assets/js/games-mind.js"></script>
+<script src="assets/js/games-lab.js"></script>
+<script src="assets/js/main.js"></script>
+</body></html>

@@ -1,0 +1,624 @@
+{
+  "build": "OVERKILL v2",
+  "date": "2026-09-06",
+  "browser": "Chromium 144.0.7559.96 on Linux",
+  "method": "Self-contained HTML loaded with Playwright set_content; mouse, keyboard, DOM range-input events, mobile touch emulation.",
+  "desktopViewport": {
+    "width": 1440,
+    "height": 1040
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scenarioPasses": 32,
+  "scenarioTotal": 32,
+  "main": {
+    "results": [
+      {
+        "test": "01_gallery_offline",
+        "passed": true,
+        "seconds": 1.43,
+        "detail": {
+          "games": 20,
+          "registered": 20,
+          "cards": 20,
+          "gameLinks": 20
+        }
+      },
+      {
+        "test": "02_all20_render",
+        "passed": true,
+        "seconds": 15.24,
+        "detail": [
+          {
+            "id": "dice",
+            "ticks": 11,
+            "paused": false,
+            "overflow": false,
+            "controls": 2
+          },
+          {
+            "id": "button",
+            "ticks": 8,
+            "paused": false,
+            "overflow": false,
+            "controls": 0
+          },
+          {
+            "id": "weather",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "refresh",
+            "ticks": 11,
+            "paused": false,
+            "overflow": false,
+            "controls": 5
+          },
+          {
+            "id": "compress",
+            "ticks": 8,
+            "paused": false,
+            "overflow": false,
+            "controls": 5
+          },
+          {
+            "id": "volume",
+            "ticks": 8,
+            "paused": false,
+            "overflow": false,
+            "controls": 15
+          },
+          {
+            "id": "download",
+            "ticks": 5,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "rps",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "random",
+            "ticks": 13,
+            "paused": false,
+            "overflow": false,
+            "controls": 1
+          },
+          {
+            "id": "timer",
+            "ticks": 13,
+            "paused": false,
+            "overflow": false,
+            "controls": 1
+          },
+          {
+            "id": "todo",
+            "ticks": 10,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "qr",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "quiz",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 6
+          },
+          {
+            "id": "password",
+            "ticks": 10,
+            "paused": false,
+            "overflow": false,
+            "controls": 8
+          },
+          {
+            "id": "spell",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "lunch",
+            "ticks": 10,
+            "paused": false,
+            "overflow": false,
+            "controls": 2
+          },
+          {
+            "id": "nickname",
+            "ticks": 11,
+            "paused": false,
+            "overflow": false,
+            "controls": 1
+          },
+          {
+            "id": "counter",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 1
+          },
+          {
+            "id": "compat",
+            "ticks": 12,
+            "paused": false,
+            "overflow": false,
+            "controls": 3
+          },
+          {
+            "id": "currency",
+            "ticks": 11,
+            "paused": false,
+            "overflow": false,
+            "controls": 5
+          }
+        ]
+      },
+      {
+        "test": "03_dice_five_real_throws",
+        "passed": true,
+        "seconds": 32.46,
+        "detail": {
+          "score": 4350,
+          "stars": 3,
+          "title": "새로운 궤도의 탄생",
+          "throws": 5,
+          "finalFace": 2
+        }
+      },
+      {
+        "test": "04_button_four_mechanics",
+        "passed": true,
+        "seconds": 5.07,
+        "detail": {
+          "score": 2310,
+          "stars": 3,
+          "title": "확인되었습니다."
+        }
+      },
+      {
+        "test": "05_weather_wind_survival",
+        "passed": true,
+        "seconds": 30.25,
+        "detail": {
+          "score": 2600,
+          "stars": 3,
+          "title": "도시의 하늘을 지켰습니다",
+          "saved": 12,
+          "city": 5
+        }
+      },
+      {
+        "test": "06_time_actual_rewind_and_exit",
+        "passed": true,
+        "seconds": 4.41,
+        "detail": {
+          "score": 2932,
+          "stars": 3,
+          "title": "다시 쓴 미래",
+          "rewindSeconds": 0.45000000000000023
+        }
+      },
+      {
+        "test": "07_press_real_lever_and_jpeg",
+        "passed": true,
+        "seconds": 12.41,
+        "detail": {
+          "score": 3000,
+          "stars": 3,
+          "title": "완벽한 압축 규격",
+          "jpegBytes": 42072,
+          "conversion": "1472.1 KB → 41.1 KB · 97.2% 감소 · 1400×900 · 투명 영역은 흰색으로 변환됩니다."
+        }
+      },
+      {
+        "test": "08_real_audio_and_32step_rebuild",
+        "passed": true,
+        "seconds": 6.23,
+        "detail": {
+          "score": 1500,
+          "stars": 3,
+          "title": "스타디움이 같은 박자로 뜁니다"
+        }
+      },
+      {
+        "test": "09_capsule_docking_report",
+        "passed": true,
+        "seconds": 11.17,
+        "detail": {
+          "score": 1488,
+          "stars": 1,
+          "title": "파일이 궤도에 도착했습니다",
+          "fuel": 67.23909999999998,
+          "flightTime": 10.4796
+        }
+      },
+      {
+        "test": "10_rps_opponent_rule",
+        "passed": true,
+        "seconds": 3.68,
+        "detail": {
+          "score": 1950,
+          "stars": 3,
+          "title": "상대의 수를 읽었습니다"
+        }
+      },
+      {
+        "test": "11_sonar_distance_trilateration",
+        "passed": true,
+        "seconds": 4.35,
+        "detail": {
+          "score": 2595,
+          "stars": 3,
+          "title": "숨은 신호를 모두 찾았습니다"
+        }
+      },
+      {
+        "test": "12_blind_timer_precision",
+        "passed": true,
+        "seconds": 20.81,
+        "detail": {
+          "score": 2973,
+          "stars": 3,
+          "title": "당신 안의 초침",
+          "errorsSeconds": [
+            0.01649999999999263,
+            0.01639999999994135,
+            0.016399999999944015
+          ]
+        }
+      },
+      {
+        "test": "13_tactical_cards_winnable",
+        "passed": true,
+        "seconds": 5.74,
+        "detail": {
+          "score": 1720,
+          "stars": 2,
+          "title": "할 일보다 거대한 위업",
+          "actions": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      },
+      {
+        "test": "14_nonogram_all_three_sizes",
+        "passed": true,
+        "seconds": 5.13,
+        "detail": {
+          "score": 3000,
+          "stars": 3,
+          "title": "신호 격자 복원 완료"
+        }
+      },
+      {
+        "test": "15_numeric_maze_decimal_math",
+        "passed": true,
+        "seconds": 7.57,
+        "detail": {
+          "score": 3300,
+          "stars": 3,
+          "title": "연산으로 열린 세 개의 문",
+          "decimalPreserved": 12.5
+        }
+      },
+      {
+        "test": "16_cipher_feedback_crypto_password",
+        "passed": true,
+        "seconds": 1.52,
+        "detail": {
+          "score": 1500,
+          "stars": 3,
+          "title": "금고 해제",
+          "securePasswordLength": 24
+        }
+      },
+      {
+        "test": "17_spelling_actual_verdicts",
+        "passed": true,
+        "seconds": 1.56,
+        "detail": {
+          "score": 1660,
+          "stars": 3,
+          "title": "문장의 질서를 지켰습니다"
+        }
+      },
+      {
+        "test": "18_lunch_real_flavor_vectors",
+        "passed": true,
+        "seconds": 5.39,
+        "detail": {
+          "score": 3000,
+          "stars": 3,
+          "title": "세 번의 완벽한 신탁"
+        }
+      },
+      {
+        "test": "19_name_constellation_default_input",
+        "passed": true,
+        "seconds": 3.05,
+        "detail": {
+          "score": 1500,
+          "stars": 3,
+          "title": "잔별운율",
+          "defaultSeedName": "잔별운율",
+          "stability": 100
+        }
+      },
+      {
+        "test": "20_document_search_unicode_count",
+        "passed": true,
+        "seconds": 3.88,
+        "detail": {
+          "score": 2787,
+          "stars": 3,
+          "title": "문서의 균열을 찾았습니다",
+          "unicodeCountOutput": "전체 8자 · 공백 제외 5자 · UTF-8 38바이트 · 공백 기준 4어절"
+        }
+      },
+      {
+        "test": "21_waveform_three_exact_matches",
+        "passed": true,
+        "seconds": 7.24,
+        "detail": {
+          "score": 3272,
+          "stars": 3,
+          "title": "서로 다른 파형이 하나가 되었습니다"
+        }
+      },
+      {
+        "test": "22_exchange_route_puzzles",
+        "passed": true,
+        "seconds": 5.86,
+        "detail": {
+          "score": 3150,
+          "stars": 3,
+          "title": "세 경로가 정확히 연결되었습니다"
+        }
+      },
+      {
+        "test": "23_pause_lifecycle_repeat_cleanup",
+        "passed": true,
+        "seconds": 4.74,
+        "detail": {
+          "oldAlive": false,
+          "oldAborted": true,
+          "oldT": 0.6139000000000234,
+          "oldTimers": 0,
+          "oldAudioAlive": false,
+          "sources": 0
+        }
+      },
+      {
+        "test": "24_mobile20_responsive",
+        "passed": true,
+        "seconds": 3.88,
+        "detail": [
+          {
+            "id": "dice",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "button",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "weather",
+            "overflow": false,
+            "width": 366,
+            "ticks": 7
+          },
+          {
+            "id": "refresh",
+            "overflow": false,
+            "width": 366,
+            "ticks": 9
+          },
+          {
+            "id": "compress",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "volume",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "download",
+            "overflow": false,
+            "width": 366,
+            "ticks": 9
+          },
+          {
+            "id": "rps",
+            "overflow": false,
+            "width": 366,
+            "ticks": 6
+          },
+          {
+            "id": "random",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "timer",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "todo",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "qr",
+            "overflow": false,
+            "width": 366,
+            "ticks": 7
+          },
+          {
+            "id": "quiz",
+            "overflow": false,
+            "width": 366,
+            "ticks": 7
+          },
+          {
+            "id": "password",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "spell",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "lunch",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "nickname",
+            "overflow": false,
+            "width": 366,
+            "ticks": 8
+          },
+          {
+            "id": "counter",
+            "overflow": false,
+            "width": 366,
+            "ticks": 7
+          },
+          {
+            "id": "compat",
+            "overflow": false,
+            "width": 366,
+            "ticks": 9
+          },
+          {
+            "id": "currency",
+            "overflow": false,
+            "width": 366,
+            "ticks": 7
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "externalRequests": [],
+    "passed": 24,
+    "total": 24
+  },
+  "edges": {
+    "results": [
+      {
+        "test": "E01_gallery_navigation",
+        "passed": true,
+        "detail": {
+          "filterSearch": true,
+          "browserBack": true
+        }
+      },
+      {
+        "test": "E02_failure_is_not_success",
+        "passed": true,
+        "detail": {
+          "mistakes": 5,
+          "lossShown": true
+        }
+      },
+      {
+        "test": "E03_audio_false_positives_and_pause",
+        "passed": true,
+        "detail": {
+          "allCellsScore": 0.545,
+          "pauseLocksGrid": true
+        }
+      },
+      {
+        "test": "E04_cipher_invalid_inputs",
+        "passed": true,
+        "detail": {
+          "duplicatesRejected": true,
+          "incompleteGuessNotCounted": true
+        }
+      },
+      {
+        "test": "E05_puzzle_errors_and_undo",
+        "passed": true,
+        "detail": {
+          "wrongRouteRejected": true,
+          "undoRestoresValue": true,
+          "nonogramNotesNotFilled": true
+        }
+      },
+      {
+        "test": "E06_pointer_release_and_pause",
+        "passed": true,
+        "detail": {
+          "releaseDepressurizes": true,
+          "pausePreservesRuleLocks": true
+        }
+      },
+      {
+        "test": "E07_corrupt_image_rejected",
+        "passed": true,
+        "detail": {
+          "corruptFileRejected": true,
+          "message": "이미지를 읽을 수 없습니다."
+        }
+      },
+      {
+        "test": "E08_mobile_native_touch",
+        "passed": true,
+        "detail": {
+          "touchDragLaunches": true,
+          "touchConstellationCompletes": true,
+          "mobileResultRetryReachable": true,
+          "DPR": 2
+        }
+      }
+    ],
+    "errors": [],
+    "passed": 8,
+    "total": 8
+  }
+}
